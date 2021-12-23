@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blogs</title>
+</head>
+<body>
+
+{% for blog1 in blogs %}
+</br>
+<a href="{% url 'blogDetail' blog1.id %}"> <h2>{{ blog1.title }}</h2> </a>
+</br>
+<h3>{{ blog1.description }}</h3>
+
+{% endfor %}
+</body>
+</html>

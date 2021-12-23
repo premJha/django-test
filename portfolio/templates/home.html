@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+</head>
+<body>
+{% for proj in projects %}
+ {{ proj.title }}
+ </br>
+ {{ proj.description }}
+<img src="{{ proj.image }}">
+
+
+{% endfor %}
+
+</body>
+</html>s
